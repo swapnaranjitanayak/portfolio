@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size:62.5%;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff
+  }
+.container-fluid{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.text-center{
+    text-align: center;
+}
+
+ul{
+    padding: 0;
+    li{
+        position: relative;
+        display: inline;
+        a{
+            text-decoration: none;
+            padding: 8px;
+        }
+    }
+}
+hr{
+    opacity: 1;
+    border: 1.2px solid;
+    margin-top: 30px;
+}
+.hasLink{
+    position: relative;
+    border-bottom: 3px solid #69686b;
+    text-decoration: none;
+    padding: 9px 0;
+}
+.hasLink:hover{
+    opacity: 1;
+}
+.hasLink:hover:before{
+    -webkit-transform: scaleY(.1);
+    -ms-transform: scaleY(.1);
+    transform: scaleY(.1);
+    z-index: 0;
+    -webkit-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    transition-duration: .25s;
+}
+.hasLink::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #69686b;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    -webkit-transition-duration: .25s;
+    -o-transition-duration: .25s;
+    transition-duration: .25s;
+    -webkit-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+nav{
+    padding: 12px 30px;
+    margin: 0;
+    a img{
+        max-width: 50px;
+        opacity:0.9;
+    }
+    ul{
+        li{
+            padding: 0 0 0 10px;
+        &.button{
+            a{
+                background: #141a46; 
+                border-radius: 4PX;
+                padding: 8px 16px;
+                color: #fff;
+            }
+           
+        }
+     }
+    }
+}
+.grey{
+    background-color: #fafafa;
+}
+section{
+    margin: 50px 0 60px;
+}
+section.intro{
+    img{
+        max-width: 70%;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+}
+section.featured-casestudies{
+    .case
+    {
+        margin: 80px 0;
+    }
+    img{
+        width: 100%;
+        margin-bottom: 20px;
+        -webkit-animation-delay: .25s!important;
+        animation-delay: .25s!important;
+        -webkit-transition: all .65s;
+        -o-transition: all .65s;
+        transition: all .65s;
+        // -webkit-box-shadow: 0 10px 60px 0 rgba(0,0,0,.2);
+        // box-shadow: 0 10px 60px 0 rgba(0,0,0,.2);
+    }
+    .case:hover img{
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        transform: scale(1.02);
+    }
+    p:not(.font-12){
+        padding-bottom: 10px;
+    }
+    a{
+        color: #2C304E;
+        text-decoration: none;
+    }
+}
+section.featured-casestudies{
+    &.articles{
+        .case{
+            margin: 30px 0;
+        }
+        img{
+            width:100%;
+            margin-bottom: 16px;
+            box-shadow: none;
+        }
+        h4{
+                font-weight: 400;
+            }
+    }
+
+}
+
+.m-b-20{
+    margin-bottom: 20px;
+}
+.m-b-40{
+    margin-bottom: 40px;
+}
+.m-t-20{
+    margin-top: 20px;
+}
+.company{
+    margin-bottom: 24px;
+    h4{
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 8px;
+    }
+}
+section.footer{
+    .col-xs-6{
+        padding-top:0;
+        padding-bottom: 4px;
+    }
+    .link-section{
+        padding-top: 20px;
+        ul{
+            margin-bottom: 30px;
+            margin-left: -8px;
+            margin-top: 4px;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about{
+    .bio{
+        margin-top: 32px;
+    }
+}
+.hero-image{
+    img{
+        width: 100%;
+    }
+}
+.border-right{
+    border-right: 1px solid #EAEAEB;
+}
+
+@media(max-width: 560px) {
+    .container{
+        width: 90%;
+        margin-top:16px;
+        margin-bottom: 16px;
+        padding: 16px;
+    }
+    .last-link{
+        display: block;
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    section.intro img{
+        margin-top: -4vh;
+    }
+    section {
+        margin: 30px 0;
+    }
+    section.featured-casestudies .case
+    {
+        margin: 20px 0;
+    } 
+}
+.desc{
+   ul {
+        list-style: square;
+       li{
+           list-style: square;
+           display: inherit;
+       }
+   }
+   .bookmark{
+       border-left:6px solid #e4e4e4;
+       background-color: #f5f5f5;
+       padding: 20px 40px;
+       margin-top: 20px;
+       p  {
+           margin-bottom: 20px;
+       }
+   }
+}
+
+@media(min-width: 992px) {
+    section.featured-casestudies{
+        img{
+            width: 95%;
+            float: right;
+        }
+        .case
+        {
+            margin: 80px 0;
+        }
+    }
+    article{
+        .desc{
+            width: 66.66666667%;
+            margin: auto;
+            h2{
+                margin: 40px 0 20px 0;
+            }
+            p  {
+                margin: 20px 0 30px;
+                line-height: 1.7;
+                font-size: 1.8rem;
+            }
+        }
+        img{
+            text-align: center;
+            margin: 0 !important;
+            width: 100%;
+            max-width: none !important;
+        }
+    }
+    
+}
+@media(max-width: 991px) {
+    section {
+        margin: 50px 0;
+    }
+    section.featured-casestudies .case
+    {
+        margin: 30px 0;
+    }  
+}
+
